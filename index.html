@@ -11,6 +11,15 @@
     <!-- Inter font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"></script>
+    <script src="./js/team.js"></script>
+    <script src="https://unpkg.com/three@0.132.2/build/three.min.js"></script>
+    <script src="https://unpkg.com/@react-three/fiber@8.0.0/dist/react-three-fiber.js"></script>
+    <script src="https://unpkg.com/@react-three/rapier@0.7.0/dist/react-three-rapier.js"></script>
+    <script src="https://unpkg.com/meshline@1.0.5/dist/meshline.umd.js"></script>
     
 </head>
 
@@ -205,44 +214,7 @@
     <!-- Team Section -->
     <section id="team">
         <h2 class="section-title">Meet Our <span>Core Team</span></h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member">
-                </div>
-                <h3>Harshil Srivastav</h3>
-                <p>Founder</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member">
-                </div>
-                <h3>Shauryadeep</h3>
-                <p>Co-founder, Lead Developer</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Team Member">
-                </div>
-                <h3>Moksh Kohli</h3>
-                <p>Community Manager</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-
+         <div id="team-root"></div>
     </section>
 
     <!-- Contact Section -->
@@ -257,7 +229,7 @@
                     <div class="info-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                     <div id="root"></div>
+                    <div id="root"></div>
                     <div>
                         <h4>Email</h4>
                         <p>hello@genesisweb3.com</p>
